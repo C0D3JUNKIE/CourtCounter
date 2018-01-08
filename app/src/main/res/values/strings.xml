@@ -3,4 +3,7 @@
     <string name="free_throw">Free Throw</string>
     <string name="three_points">+ 3</string>
     <string name="two_points">+ 2</string>
+    <string name="reset_button">Reset</string>
+    <string name="team_one">Team A</string>
+    <string name="team_two">Team B</string>
 </resources>

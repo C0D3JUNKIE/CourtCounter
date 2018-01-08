@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addTwoForTeamB(View view){
         scoreTeamB += 2;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void addThreeForTeamB(View view){
@@ -66,14 +66,25 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team A.
      */
-    public void displayForTeamA(int ascore) {
+    public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(ascore));
+        scoreView.setText(String.valueOf(score));
     }
 
-    public void displayForTeamB(int bscore) {
+    public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(bscore));
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Reset values to zero
+     * @param view
+     */
+    public void resetButton(View view){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 
 
